@@ -11,11 +11,8 @@
 // console.log( owners );
 
 //para exportar con uno por defecto debemos dejarlo como originalmente:
-import heroes, { owners } from "./data/heroes";
-console.log( owners );
-
-
-
+//import heroes, { owners } from "../data/heroes";
+//console.log( owners );
 
 // const getHeoresById = (id) => {
 //     return heroes.find( ( heroe ) => {
@@ -38,12 +35,12 @@ console.log( owners );
 
 //otra forma de hacerlo
 
-const getHeoresById = (id) => heroes.find( ( heroe ) => heroe.id === id);
-console.log( getHeoresById(3) );
+export const getHeoresById = (id) => heroes.find( ( heroe ) => heroe.id === id);
+//console.log( getHeoresById(3) );
 
 //Nueva funcion
-const getHeroesByOwner = ( owner ) => heroes.filter( ( heroe ) => heroe.owner === owner);
-console.log( getHeroesByOwner('DC') );
+export const getHeroesByOwner = ( owner ) => heroes.filter( ( heroe ) => heroe.owner === owner);
+//console.log( getHeroesByOwner('DC') );
 
 
 //Multimples exportaciones y exportaciones por defecto
