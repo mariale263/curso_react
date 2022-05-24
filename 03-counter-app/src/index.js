@@ -1,4 +1,20 @@
-import React from 'react';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+//
+// const saludo = <h1>Hola Mundo</h1>;
+//
+// const divRoot = document.querySelector('#app');
+//
+// ReactDOM.render( saludo, divRoot );
 
-const saludo = <h1>Hola Mundo</h1>;
-    console.log( saludo);
+//Trabajando en la siguente seccion Nuestro primer componente
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import PrimeraApp from './PrimeraApp';
+import './index.css';
+
+
+const divRoot = document.querySelector('#app');
+
+ReactDOM.render( <PrimeraApp saludo="Hola, soy María" /> , divRoot );
